@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#table1">Table 1</a></li>
+                <li><a href="#table2">Table 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="table1">
+            <h2>Simple List</h2>
+            <!-- This table is not semantic -->
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Quiz 1 Score</th>
+                </tr>
+                <tr>
+                    <td>Asta</td>
+                    <td>BSCS</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>Yuno</td>
+                    <td>BSCS</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td>Noel</td>
+                    <td>BSCS</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section id="table2">
+            <h2>Class Schedule</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>7:00</th>
+                        <td rowspan="7">Free Time</td>
+                        <td rowspan="3">Free Time</td>
+                        <td rowspan="12">Day Off</td>
+                        <td rowspan="7">Free Time</td>
+                        <td rowspan="3">Free Time</td>
+                        <td rowspan="12" colspan="1">Day Off</td>
+                        <td rowspan="12" colspan="1">Dota Mode</td>
+                    </tr>
+                    <tr>
+                        <th>8:00</th>
+                    </tr>
+                    <tr>
+                        <th>9:00</th>
+                    </tr>
+                    <tr>
+                        <th>10:00</th>
+                        <td rowspan="3">Web Dev</td>
+                        <td rowspan="3">Web Dev</td>
+                    </tr>
+                    <tr>
+                        <th>11:00</th>
+                    </tr>
+                    <tr>
+                        <th>12:00</th>
+                    </tr>
+                    <tr>
+                        <th>1:00</th>
+                        <td rowspan="1">Free Time</td>
+                        <td rowspan="1">Free Time</td>
+                    </tr>
+                    <tr>
+                        <th>2:00</th>
+                        <td rowspan="3">Elective 3</td>
+                        <td rowspan="3">Web Dev</td>
+                        <td rowspan="3">Thesis</td>
+                        <td rowspan="3">Web Dev</td>
+                    </tr>
+                    <tr>
+                        <th>3:00</th>
+                    </tr>
+                    <tr>
+                        <th>4:00</th>
+                    </tr>
+                    <tr>
+                        <th>5:00</th>
+                        <td rowspan="2" colspan="2">Free Time</td>
+                        <td rowspan="2" colspan="2">Free Time</td>
+                    </tr>
+                    <tr>
+                        <th>6:00</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="8" align="center">Individual Daily Program</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Jaydee Ballaho</p>
+    </footer>
+</body>
+</html>
