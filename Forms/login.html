@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./addbook.html">Add Book</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome Back!</h1>
+        <p>Please enter your credentials to continue.</p>
+        <section>
+            <form action="./addbook.html" method="post">
+                <div>
+                    <label for="username">Username</label>
+                    <br>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <br>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div>
+                    <input type="submit" value="Login to Continue">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Jaydee C. Ballaho</p>
+    </footer>
+</body>
+</html>
