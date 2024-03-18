@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+section#banner{
+    height: 100vh;
+    display: flex;
+    background-image: url("./Group\ 573.png");
+    background-size: cover;
+}
+
+.container{
+    width: min(100%, 1200px);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+h2{
+    font-size: 74px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Sen", sans-serif;
+    margin-bottom: 8px;
+}
+
+.col{
+    position: relative;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+p{
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.see-more{
+    text-decoration: none;
+    color: #fff;
+    background-color: #FDBA10;
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}

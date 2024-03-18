@@ -1,0 +1,56 @@
+/* The default CSS is for mobile device 1px to 767px */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --red: red;
+    --blue: blue;
+    --green: green;
+}
+
+.bg-red{
+    background-color: var(--red);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+
+.bg-green{
+    background-color: var(--green);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.col{
+    height: 400px;
+    width: 100%;       /* Change this depending on the device width */
+}
+
+@media only screen and (min-width: 768px) {
+    section{
+        flex-direction: row;
+    }
+    
+    .col{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    section{
+        flex-direction: row;
+    }
+    
+    .col{
+        width: 33.33%;
+    }
+}
