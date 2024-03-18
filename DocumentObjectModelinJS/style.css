@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.5);
+}
+
+h1{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group > label{
+    display: block;
+}
+
+.form-group > input[type="number"], 
+.form-group > button{
+    width: 100%;
+}
+
+.form-group > input[type="number"]{
+    padding: 6px;
+    margin: 8px 0;
+}
+
+.form-group > button{
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.form-group > button > span{
+    text-transform: uppercase;
+}
