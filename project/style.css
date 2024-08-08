@@ -1,0 +1,165 @@
+*{
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+}
+
+:root{
+    --brand-color: #0D5EBA;
+    --brand-color-2: #002D69;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-brand:hover{
+    font-size: 36px;
+    color: var(--brand-color);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.navbar-brand{
+    display: none;
+}
+
+.navbar-brand-sm{
+    display: flex;
+}
+
+.bag{
+    width: 24px;
+    height: auto;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+    width: 50%;
+}
+
+.nav-link{
+    font-weight: 600;
+}
+
+.navbar-nav{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bg-white{
+    background-color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+    color: var(--brand-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--brand-color);
+}
+
+.banner{
+    width: 100%;
+}
+
+.img-banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading-2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--brand-color-2);
+}
+
+.shop-by-jewelry-type .card{
+    border: none;
+}
+
+.shop-by-jewelry-type .card .card-title{
+    color: var(--brand-color-2);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.img-banner-right{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.banner-left{
+    width: 100%;
+    background-color: #002D69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-right{
+    width: 100%;
+    display: none;
+}
+
+.content > h3{
+    color: white;
+    font-size: 54px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.content > p{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.content .btn.learn-more {
+    background-color: white;
+    border: none;
+    width: 170px;
+}
+
+.content a.learn-more {
+    color: var(--brand-color-2);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content .btn.view-gallery {
+    background-color: var(--brand-color-2);
+    border: none;
+    width: 170px;
+}
+
+.content a.view-gallery {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar-brand{
+        display: flex;
+    }
+    
+    .navbar-brand-sm{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .banner-left{
+        width: 47%;
+    }
+    
+    .banner-right{
+        width: 53%;
+        display: flex;
+    }
+}
